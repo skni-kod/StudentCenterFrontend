@@ -379,7 +379,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Start branch names, commit messages and pull request titles with applicable type.
 
-  - `chore` - when changing code that doen't affect production
+  - `chore` - when changing code that doesn't affect production
   - `docs` - when writing documentation
   - `feat` - when adding a new feature
   - `fix` - when fixing a bug
