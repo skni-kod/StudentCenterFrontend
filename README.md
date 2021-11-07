@@ -1,11 +1,12 @@
-<h1 style="text-align: center">Student Center</h1>
+# Student Center
 
-<p style="text-align: center">Platform for students, built to make contributing and sharing resources easy.</p>
+Platform for students, built to make contributing and sharing resources easy.
 
 ## About
 
-### Built with
+### Built With
 
+- **Components**: [Radix UI](https://www.radix-ui.com/)
 - **Deployment**: [Vercel](https://vercel.com/)
 - **Framework**: [Next.js](https://nextjs.org/)
 - **I18n**: [next-translate](https://github.com/vinissimus/next-translate)
@@ -16,6 +17,7 @@
 
 ### Prerequisites
 
+- [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
 
@@ -84,3 +86,7 @@ Please see our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - Konrad Bochenek ([@Kazan1520](https://github.com/Kazan1520))
 - Mateusz Aliyev ([@mateuszaliyev](https://github.com/mateuszaliyev))
+
+## License
+
+StudentCenter is not currently open source.
