@@ -1,6 +1,7 @@
 {
   "name": "student-center",
-  "private": false,
+  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
