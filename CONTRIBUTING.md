@@ -1,18 +1,18 @@
-# Contributing to StudentCenter
+# Contributing to Studentre
 
 Thank you for taking the time to contribute!
 
-The following is a set of guidelines for contributing to StudentCenter project, which is hosted in the [Studenckie Koło Naukowe Informatyków "KOD" Organization](https://github.com/skni-kod) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to Studentre project, which is hosted in the [Studenckie Koło Naukowe Informatyków "KOD" Organization](https://github.com/skni-kod) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [StudentCenter Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project and everyone participating in it is governed by the [Studentre Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ## Possible Ways of Contributing
 
 ### Reporting Bugs
 
-Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). Before creating bug reports, please **perform a [cursory search](https://github.com/skni-kod/StudentCenterFrontend/issues?q=is%3Aissue)** to see if the problem has already been reported. If it has and the issue is still open, add a comment to the existing issue instead of opening a new one. When you are creating a bug report, please include as many details as possible. Fill out [the required template](.github/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
+Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). Before creating bug reports, please **perform a [cursory search](https://github.com/skni-kod/StudentreFrontend/issues?q=is%3Aissue)** to see if the problem has already been reported. If it has and the issue is still open, add a comment to the existing issue instead of opening a new one. When you are creating a bug report, please include as many details as possible. Fill out [the required template](.github/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
 
 > **Note**: If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue or reference it with `#issue_number` in the body of your new one.
 
@@ -33,7 +33,7 @@ Provide more context by answering these questions:
 
 ### Suggesting Enhancements
 
-Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com/features/issues/). Before creating enhancement suggestions, please **perform a [cursory search](https://github.com/skni-kod/StudentCenterFrontend/issues?q=+label%3Aenhancement+)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one. When you are creating an enhancement suggestion, please include as many details as possible. Fill in [the template](.github/ISSUE_TEMPLATE/feature_request.md), including the steps that you imagine you would take if the feature you're requesting existed:
+Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com/features/issues/). Before creating enhancement suggestions, please **perform a [cursory search](https://github.com/skni-kod/StudentreFrontend/issues?q=+label%3Aenhancement+)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one. When you are creating an enhancement suggestion, please include as many details as possible. Fill in [the template](.github/ISSUE_TEMPLATE/feature_request.md), including the steps that you imagine you would take if the feature you're requesting existed:
 
 - **Use a clear and descriptive title** for the issue to identify the suggestion.
 - **Provide a step-by-step description of the suggested enhancement** in as many details as possible.
@@ -54,10 +54,10 @@ Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com
 
 The process described here has several goals:
 
-- Maintain StudentCenters's quality.
+- Maintain Studentres's quality.
 - Fix problems that are important to users.
-- Engage the community in working toward the best possible StudentCenter.
-- Enable a sustainable system for StudentCenters's maintainers to review contributions.
+- Engage the community in working toward the best possible Studentre.
+- Enable a sustainable system for Studentres's maintainers to review contributions.
 
 Please follow these steps to have your contribution considered by the maintainers, adhering to the [styleguides](#styleguides):
 
