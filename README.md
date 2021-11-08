@@ -1,4 +1,4 @@
-# Student Center
+# Studentre
 
 Platform for students, built to make contributing and sharing resources easy.
 
@@ -28,17 +28,17 @@ Clone the repository.
 ```bash
 # With HTTPS.
 
-git clone https://github.com/skni-kod/StudentCenterFrontend.git
+git clone https://github.com/skni-kod/StudentreFrontend.git
 
 # With SSH.
 
-git clone git@github.com:skni-kod/StudentCenterFrontend.git
+git clone git@github.com:skni-kod/StudentreFrontend.git
 ```
 
 Go to the project directory.
 
 ```bash
-cd StudentCenterFrontend
+cd StudentreFrontend
 ```
 
 Install dependencies.
@@ -77,16 +77,16 @@ Please see our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - Oskar Tyniec ([@Rakso12](https://github.com/Rakso12))
 
-### [Backend](https://github.com/skni-kod/StudentCenterBackend)
+### [Backend](https://github.com/skni-kod/StudentreBackend)
 
 - Łukasz Harla ([@bernes99](https://github.com/Bernes99)) – Project Leader
 - Piotr Mrowca ([@mr0ffka](https://github.com/mr0ffka))
 
-### [Frontend](https://github.com/skni-kod/StudentCenterFrontend)
+### [Frontend](https://github.com/skni-kod/StudentreFrontend)
 
 - Konrad Bochenek ([@Kazan1520](https://github.com/Kazan1520))
 - Mateusz Aliyev ([@mateuszaliyev](https://github.com/mateuszaliyev))
 
 ## License
 
-StudentCenter is not currently open source.
+Studentre is not currently open source.
