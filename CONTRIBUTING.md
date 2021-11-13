@@ -54,10 +54,10 @@ Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com
 
 The process described here has several goals:
 
-- Maintain Studentres's quality.
+- Maintain Studentre's quality.
 - Fix problems that are important to users.
 - Engage the community in working toward the best possible Studentre.
-- Enable a sustainable system for Studentres's maintainers to review contributions.
+- Enable a sustainable system for Studentre's maintainers to review contributions.
 
 Please follow these steps to have your contribution considered by the maintainers, adhering to the [styleguides](#styleguides):
 
@@ -148,7 +148,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Explicitly type `children` prop, unless it is a page component.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```tsx
   type ExampleProps = {
@@ -160,7 +160,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   };
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```tsx
   type ExampleProps = {
@@ -173,7 +173,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   };
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```tsx
   type ExampleProps = {
@@ -185,9 +185,9 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   };
   ```
 
-- Use Functional Components.
+- Use functional components with arrow function syntax.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```tsx
   class Example extends React.Component<ExampleProps> {
@@ -197,7 +197,15 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   }
   ```
 
-  ✔️ **GOOD**
+  ❌ **INCORRECT**
+
+  ```tsx
+  function Example({ message }: ExampleProps) {
+    return <h1>{message}</h1>;
+  }
+  ```
+
+  ✔️ **CORRECT**
 
   ```tsx
   const Example = ({ message }: ExampleProps) => {
@@ -207,7 +215,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Use `NextPage` to type props for components in `/src/pages` directory.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```tsx
   type PageProps = {
@@ -219,7 +227,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   };
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```tsx
   type PageProps = {
@@ -235,14 +243,14 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Prefer absolute path `import` unless it makes more sense to use relative paths.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```ts
   import Button from "../../components/button";
   import type { CardType } from "./types";
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```ts
   import Button from "@/components/button";
@@ -253,7 +261,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Don't hard code strings displayed to user. Extract them to appropriate namespace in `/src/locales` directory instead.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```tsx
   const Component = () => {
@@ -263,7 +271,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   export default Component;
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```json
   {
@@ -287,7 +295,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Use `type` when defining an intersection or union.
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```ts
   interface Colorful {
@@ -301,7 +309,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   type ColorfulCircle = Colorful & Circle;
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```ts
   type Fruit = "apple" | "pear" | "orange";
@@ -311,7 +319,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Use `type` when defining function types.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```ts
   interface Sum {
@@ -319,7 +327,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   }
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```ts
   type Sum = (x: number, y: number) => number;
@@ -327,7 +335,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Use `type` when defining React component props.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```ts
   interface ExampleProps {
@@ -336,7 +344,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   }
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```ts
   type ExampleProps = {
@@ -347,7 +355,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Use `type` when defining tuple types.
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```ts
   type ExampleTuple = [boolean, number, string];
@@ -355,7 +363,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Use `interface` for all object types where using `type` is not required.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```ts
   type User = {
@@ -365,7 +373,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   };
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```ts
   interface User {
@@ -408,13 +416,13 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Adhere to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```
   add feature
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```
   feat: add feature
@@ -422,13 +430,13 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Use the present tense.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```
   feat: added feature
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```
   feat: add feature
@@ -436,13 +444,13 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Use the imperative mood.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```
   fix: changes feature
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```
   fix: change feature
@@ -450,13 +458,13 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Reference pull requests liberally after the first line of **merge commit message**.
 
-  ❌ **BAD**
+  ❌ **INCORRECT**
 
   ```
   perf: use `priority` on images detected as LCP
   ```
 
-  ✔️ **GOOD**
+  ✔️ **CORRECT**
 
   ```
   perf: use `priority` on images detected as LCP (#47)
