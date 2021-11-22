@@ -55,6 +55,12 @@ Run the development server.
 npm run dev
 ```
 
+Generate i18n types for translation keys.
+
+```bash
+npm run i18n
+```
+
 Build application for production.
 
 ```bash
