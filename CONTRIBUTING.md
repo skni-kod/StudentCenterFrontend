@@ -77,35 +77,41 @@ Please follow these steps to have your contribution considered by the maintainer
    npm run dev
    ```
 
-5. Check the formatting of your code.
+5. Generate i18n types after changing translation keys.
+
+   ```bash
+   npm run i18n
+   ```
+
+6. Check the formatting of your code.
 
    ```bash
    npm run lint
    ```
 
-6. Fix any existing errors.
+7. Fix any existing errors.
 
    ```bash
    npm run fix
    ```
 
-7. Build the code
+8. Build the code
 
    ```bash
    npm run build
    ```
 
-8. Start production server to check everything is working properly.
+9. Start production server to check everything is working properly.
 
    ```bash
    npm run start
    ```
 
-9. Commit your changes.
+10. Commit your changes.
 
-10. Push the new branch up to the remote.
+11. Push the new branch up to the remote.
 
-11. Open a pull request.
+12. Open a pull request.
 
 While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
 
@@ -124,6 +130,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   - when naming JavaScript / TypeScript functions.
   - when naming JavaScript / TypeScript object keys.
   - when naming **local** JavaScript / TypeScript constants and variables.
+  - when naming React hooks and files that contain them.
 
 - Use `CONSTANT_CASE` / `MACRO_CASE` / `SCREAMING_SNAKE_CASE` / `UPPER_CASE`:
 
@@ -135,14 +142,14 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   - in `className` and `id` attributes.
   - in HTML, CSS and SCSS languages.
-  - when naming a file or a folder.
+  - when naming a folder or a file, unless the file contains a React hook or component and is outside of `/src/pages` directory.
   - when naming a new git branch.
   - when naming keys in translation namespace files.
 
 - Use `PascalCase`:
 
   - when naming a `class`, an `interface` or a `type` in TypeScript.
-  - when naming a React Component.
+  - when naming React Components and files outside of `/src/pages` directory that contain them.
 
 #### Components
 
