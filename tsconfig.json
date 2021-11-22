@@ -8,16 +8,16 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
     "noEmit": true,
     "paths": {
       "@/*": ["src/*"]
     },
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true
+    "target": "es5"
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

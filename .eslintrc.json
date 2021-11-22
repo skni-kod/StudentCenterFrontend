@@ -40,7 +40,6 @@
     "@typescript-eslint/promise-function-async": "error",
     "@typescript-eslint/sort-type-union-intersection-members": "error",
     "@typescript-eslint/strict-boolean-expressions": "error",
-    "capitalized-comments": ["warn", "always"],
     "curly": "warn",
     "eqeqeq": "error",
     "jsx-a11y/aria-role": "error",
@@ -136,7 +135,7 @@
       { "caseSensitive": false, "natural": true }
     ],
     "sort-vars": "warn",
-    "spaced-comment": ["error", "always"],
+    "spaced-comment": ["warn", "always"],
     "typescript-sort-keys/interface": "warn",
     "typescript-sort-keys/string-enum": "warn",
     "unused-imports/no-unused-imports": "error",
