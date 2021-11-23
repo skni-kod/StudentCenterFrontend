@@ -4,8 +4,8 @@ import path from "path";
 import prettier, { Options } from "prettier";
 
 import prettierConfig from "../.prettierrc.js";
-import getDeepKeys from "../src/utility/deep-keys";
-import * as log from "../src/utility/log";
+import getDeepKeys from "../src/utilities/deep-keys";
+import * as log from "../src/utilities/log";
 
 let inputFiles: string[] = [];
 
