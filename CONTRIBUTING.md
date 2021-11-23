@@ -142,14 +142,14 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   - in `className` and `id` attributes.
   - in HTML, CSS and SCSS languages.
-  - when naming a folder or a file, unless the file contains a React hook or component and is outside of `/src/pages` directory.
+  - when naming a folder or a file, unless the file contains a React hook or requires different naming convention.
   - when naming a new git branch.
   - when naming keys in translation namespace files.
 
 - Use `PascalCase`:
 
   - when naming a `class`, an `interface` or a `type` in TypeScript.
-  - when naming React Components and files outside of `/src/pages` directory that contain them.
+  - when naming React components.
 
 #### Components
 
