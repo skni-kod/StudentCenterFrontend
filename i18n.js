@@ -6,5 +6,6 @@ module.exports = {
   logBuild: false,
   pages: {
     "*": ["common"],
+    "/": ["home"],
   },
 };
