@@ -2,10 +2,18 @@ import type { NextPage } from "next";
 
 import useTypeSafeTranslation from "@/hooks/useTypeSafeTranslation";
 
+import LayoutDefault from "@/layouts/default";
+
 const Home: NextPage = () => {
   const { t } = useTypeSafeTranslation();
 
-  return <div className="flex text-5xl">{t("common:homepage")}</div>;
+  return (
+    <LayoutDefault
+      headProps={{ title: `${t("home:homepage")} | ${t("common:app-name")}` }}
+    >
+      {t("home:homepage")}
+    </LayoutDefault>
+  );
 };
 
 export default Home;
