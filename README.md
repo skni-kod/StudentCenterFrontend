@@ -85,12 +85,13 @@ Please see our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### [Backend](https://github.com/skni-kod/StudentreBackend)
 
-- Łukasz Harla ([@bernes99](https://github.com/Bernes99)) – Project Leader
+- Łukasz Harla ([@Bernes99](https://github.com/Bernes99)) – Project Leader
 - Piotr Mrowca ([@mr0ffka](https://github.com/mr0ffka))
 
 ### [Frontend](https://github.com/skni-kod/StudentreFrontend)
 
 - Konrad Bochenek ([@Kazan1520](https://github.com/Kazan1520))
+- Maksymilian Dendura ([@Noniv](https://github.com/Noniv))
 - Mateusz Aliyev ([@mateuszaliyev](https://github.com/mateuszaliyev))
 
 ## License
