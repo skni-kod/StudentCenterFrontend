@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync, writeFileSync } from "fs";
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "fs";
 import path from "path";
 
 import prettier, { Options } from "prettier";
@@ -11,6 +11,7 @@ let inputFiles: string[] = [];
 
 const inputPath = path.resolve(__dirname, "../src/locales/en/");
 const outputPath = path.resolve(__dirname, "../src/types/i18n.ts");
+const outputDirectory = path.resolve(outputPath, "../");
 
 try {
   inputFiles = readdirSync(inputPath);
@@ -61,6 +62,7 @@ const outputFile: string = prettier.format(outputString, {
 });
 
 try {
+  mkdirSync(outputDirectory, { recursive: true });
   writeFileSync(outputPath, outputFile);
 } catch (error: unknown) {
   log.error(
