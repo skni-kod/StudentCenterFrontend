@@ -1,4 +1,4 @@
-import logo from "public/images/logo.svg";
+import logomarkImage from "public/images/logomark.svg";
 
 import Image, { ImageProps } from "@/components/image";
 
@@ -17,7 +17,7 @@ const Logomark = ({ className = "", imageProps, ...props }: LogomarkProps) => {
         alt={`${t("common:app-name")} - ${t("common:logo")}`}
         layout="fill"
         objectFit="contain"
-        src={logo as StaticImageData}
+        src={logomarkImage as StaticImageData}
         {...imageProps}
       />
     </figure>
