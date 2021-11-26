@@ -1,5 +1,3 @@
-import React from "react";
-
 import Head, { HeadProps } from "@/components/head";
 
 export type LayoutDefaultProps = {
