@@ -34,7 +34,13 @@ const Link = ({
         scroll={scroll}
         shallow={shallow}
       >
-        {passHref ? children : <a className={className}>{children}</a>}
+        {passHref ? (
+          children
+        ) : (
+          <a className={className} {...props}>
+            {children}
+          </a>
+        )}
       </NextLink>
     );
   }
