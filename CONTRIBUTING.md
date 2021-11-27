@@ -287,12 +287,12 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   ```
 
   ```tsx
-  import useTranslation from "next-translate/useTranslation";
+  import useTypeSafeTranslation from "@/hooks/useTypeSafeTranslation";
 
   const Component = () => {
-    const { t } = useTranslation("common");
+    const { t } = useTypeSafeTranslation();
 
-    return <div>{t("hello-world")}</div>;
+    return <div>{t("common:hello-world")}</div>;
   };
 
   export default Component;
