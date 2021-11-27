@@ -1,6 +1,10 @@
-# Studentre
-
-Platform for students, built to make contributing and sharing resources easy.
+<p align="center">
+  <img alt="Studentre" src="https://raw.githubusercontent.com/skni-kod/StudentreFrontend/main/public/images/logo.svg" style="width: 50%" />
+</p>
+<br />
+<p align="center">
+  Platform for students, built to make contributing and sharing resources easy.
+</p>
 
 ## About
 
