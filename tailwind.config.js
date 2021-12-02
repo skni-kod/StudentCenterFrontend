@@ -1,7 +1,7 @@
 const { lightBlue, ...colors } = require("tailwindcss/colors");
 
 module.exports = {
-  darkMode: false,
+  darkMode: "class",
   mode: "jit",
   plugins: [],
   purge: [
