@@ -7,7 +7,7 @@ const Logotype = ({ className = "", ...props }: LogotypeProps) => {
 
   return (
     <span
-      className={`font-medium font-logo select-none text-transparent bg-clip-text bg-gradient-to-r from-logo-900 via-logo-700 to-logo-500 ${className}`}
+      className={`font-medium font-logo select-none text-transparent bg-clip-text bg-gradient-to-r from-brand-800 via-brand-600 to-brand-400 ${className}`}
       {...props}
     >
       {t("common:app-name")}
