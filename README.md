@@ -87,9 +87,14 @@ Please see our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - Oskar Tyniec ([@Rakso12](https://github.com/Rakso12))
 
+### Project Leader
+
+- Łukasz Harla ([@Bernes99](https://github.com/Bernes99))
+
 ### [Backend](https://github.com/skni-kod/StudentreBackend)
 
-- Łukasz Harla ([@Bernes99](https://github.com/Bernes99)) – Project Leader
+- Kacper Maciołek ([@Kacperacy](https://github.com/Kacperacy))
+- Łukasz Harla ([@Bernes99](https://github.com/Bernes99))
 - Piotr Mrowca ([@mr0ffka](https://github.com/mr0ffka))
 
 ### [Frontend](https://github.com/skni-kod/StudentreFrontend)
