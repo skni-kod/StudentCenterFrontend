@@ -101,6 +101,7 @@ Please see our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### [Frontend](https://github.com/skni-kod/StudentreFrontend)
 
+- Hubert Augustyn ([@Keerch](https://github.com/Keerch))
 - Konrad Bochenek ([@Kazan1520](https://github.com/Kazan1520))
 - Maksymilian Dendura ([@Noniv](https://github.com/Noniv))
 - Mateusz Aliyev ([@mateuszaliyev](https://github.com/mateuszaliyev))
