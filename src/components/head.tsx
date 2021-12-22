@@ -35,6 +35,28 @@ const Head = ({ children, description, title }: HeadProps) => {
       <link color="#3b82f6" href="/safari-pinned-tab.svg" rel="mask-icon" />
       <meta content="#2d89ef" name="msapplication-TileColor" />
       <meta content="#ffffff" name="theme-color" />
+      {/* Fonts */}
+      <link
+        as="font"
+        crossOrigin="anonymous"
+        href="/fonts/Outfit-Medium.woff2"
+        rel="preload"
+        type="font/woff2"
+      />
+      <link
+        as="font"
+        crossOrigin="anonymous"
+        href="/fonts/SourceSans3VF-Italic.ttf.woff2"
+        rel="preload"
+        type="font/woff2"
+      />
+      <link
+        as="font"
+        crossOrigin="anonymous"
+        href="/fonts/SourceSans3VF-Roman.ttf.woff2"
+        rel="preload"
+        type="font/woff2"
+      />
       {/* Meta tags */}
       <meta
         content={description ?? t("common:app-description")}
