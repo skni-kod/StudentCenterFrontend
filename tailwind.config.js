@@ -1,8 +1,8 @@
 const {
   amber,
   black,
-  coolGray,
-  green,
+  emerald,
+  gray,
   red,
   sky,
   white,
@@ -11,15 +11,14 @@ const {
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  darkMode: "class",
-  mode: "jit",
-  plugins: [],
-  purge: [
+  content: [
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/layouts/**/*.{js,ts,jsx,tsx}",
     "./src/modules/**/*.{js,ts,jsx,tsx}",
     "./src/pages/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
+  plugins: [],
   theme: {
     colors: {
       black,
@@ -37,19 +36,22 @@ module.exports = {
       },
       current: "currentColor",
       error: red,
-      gray: coolGray,
+      gray,
       info: sky,
-      success: green,
+      success: emerald,
       transparent: "transparent",
       warning: amber,
       white,
     },
-    extend: {
-      fontFamily: {
-        ...defaultTheme.fontFamily,
-        logo: ["outfit", "sans"],
-        outfit: ["outfit"],
-      },
+    fontFamily: {
+      default: ["'Source Sans 3'", ...defaultTheme.fontFamily.sans],
+      headline: ["'Source Sans 3'", ...defaultTheme.fontFamily.sans],
+      logo: ["Outfit", ...defaultTheme.fontFamily.sans],
+      mono: defaultTheme.fontFamily.mono,
+      outfit: ["Outfit", ...defaultTheme.fontFamily.sans],
+      sans: ["'Source Sans 3'", ...defaultTheme.fontFamily.sans],
+      serif: defaultTheme.fontFamily.serif,
+      source: ["'Source Sans 3'", ...defaultTheme.fontFamily.sans],
     },
   },
 };
