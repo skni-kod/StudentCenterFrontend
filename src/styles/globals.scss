@@ -2,14 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-display: fallback;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 1 999;
-  src: url("/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
-}
+@layer base {
+  @font-face {
+    font-display: fallback;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/Outfit-Medium.woff2") format("woff2");
+  }
 
-html {
-  scroll-behavior: smooth;
+  @font-face {
+    font-display: fallback;
+    font-family: "Source Sans 3";
+    font-style: italic;
+    font-weight: 200 900;
+    src: url("/fonts/SourceSans3VF-Italic.ttf.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 200 900;
+    src: url("/fonts/SourceSans3VF-Roman.ttf.woff2") format("woff2");
+  }
+
+  body {
+    @apply text-black dark:text-white bg-white dark:bg-black;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
 }
