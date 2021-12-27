@@ -54,14 +54,14 @@ module.exports = {
       white,
     },
     fontFamily: {
-      default: ["'Source Sans 3'", ...defaultTheme.fontFamily.sans],
-      headline: ["'Source Sans 3'", ...defaultTheme.fontFamily.sans],
+      default: ["Jost", ...defaultTheme.fontFamily.sans],
+      headline: ["Jost", ...defaultTheme.fontFamily.sans],
+      jost: ["Jost", ...defaultTheme.fontFamily.sans],
       logo: ["Outfit", ...defaultTheme.fontFamily.sans],
       mono: defaultTheme.fontFamily.mono,
       outfit: ["Outfit", ...defaultTheme.fontFamily.sans],
-      sans: ["'Source Sans 3'", ...defaultTheme.fontFamily.sans],
+      sans: ["Jost", ...defaultTheme.fontFamily.sans],
       serif: defaultTheme.fontFamily.serif,
-      source: ["'Source Sans 3'", ...defaultTheme.fontFamily.sans],
     },
   },
 };

@@ -39,21 +39,14 @@ const Head = ({ children, description, title }: HeadProps) => {
       <link
         as="font"
         crossOrigin="anonymous"
+        href="/fonts/Jost-VF.ttf"
+        rel="preload"
+        type="font/ttf"
+      />
+      <link
+        as="font"
+        crossOrigin="anonymous"
         href="/fonts/Outfit-Medium.woff2"
-        rel="preload"
-        type="font/woff2"
-      />
-      <link
-        as="font"
-        crossOrigin="anonymous"
-        href="/fonts/SourceSans3VF-Italic.ttf.woff2"
-        rel="preload"
-        type="font/woff2"
-      />
-      <link
-        as="font"
-        crossOrigin="anonymous"
-        href="/fonts/SourceSans3VF-Roman.ttf.woff2"
         rel="preload"
         type="font/woff2"
       />
