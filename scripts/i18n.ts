@@ -53,7 +53,7 @@ if (!keys.length) {
 const outputString = `${keys.reduce(
   (previous, current, index) =>
     `${previous}${index === 0 ? "" : " | "}"${current}"`,
-  "export type I18nKey = "
+  "type I18nKey = "
 )}\n\nexport default I18nKey`;
 
 const outputFile: string = prettier.format(outputString, {
