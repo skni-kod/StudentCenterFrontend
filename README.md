@@ -12,9 +12,11 @@
 
 ### Built With
 
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Components**: [Radix UI](https://www.radix-ui.com/)
 - **Deployment**: [Vercel](https://vercel.com/)
 - **Framework**: [Next.js](https://nextjs.org/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
 - **I18n**: [next-translate](https://github.com/vinissimus/next-translate)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
@@ -105,6 +107,10 @@ Please see our [CONTRIBUTING.md](CONTRIBUTING.md).
 - Konrad Bochenek ([@Kazan1520](https://github.com/Kazan1520))
 - Maksymilian Dendura ([@Noniv](https://github.com/Noniv))
 - Mateusz Aliyev ([@mateuszaliyev](https://github.com/mateuszaliyev))
+
+## Contributors
+
+- Mariusz Dąbrowski ([@marioooo0o](https://github.com/marioooo0o))
 
 ## License
 
