@@ -1,8 +1,8 @@
-import { useTheme } from "next-themes";
+import { useTheme as useNextThemesTheme } from "next-themes";
 
 import type Theme from "@/types/theme";
 
-export type UseTypeSafeThemeProps = {
+export type UseThemeProps = {
   /** Forced theme name for the current page */
   forcedTheme?: Theme;
   /** If `enableSystem` is true and the active theme is "system", this returns whether the system preference resolved to "dark" or "light". Otherwise, identical to `theme` */
@@ -17,6 +17,6 @@ export type UseTypeSafeThemeProps = {
   themes: Theme[];
 };
 
-const useTypeSafeTheme = useTheme as () => UseTypeSafeThemeProps;
+const useTheme = useNextThemesTheme as () => UseThemeProps;
 
-export default useTypeSafeTheme;
+export default useTheme;
