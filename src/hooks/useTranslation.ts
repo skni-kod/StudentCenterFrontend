@@ -1,14 +1,14 @@
 import type { TranslationQuery } from "next-translate";
-import useTranslation from "next-translate/useTranslation";
+import useNextTranslateTranslation from "next-translate/useTranslation";
 
 import type I18nKey from "@/types/i18n";
 
-export type TypeSafeI18n = {
+export type I18n = {
   lang: string;
-  t: TypeSafeTranslate;
+  t: Translate;
 };
 
-export type TypeSafeTranslate = <T = string>(
+export type Translate = <T = string>(
   i18nKey: I18nKey,
   query?: TranslationQuery | null,
   options?: {
@@ -18,6 +18,6 @@ export type TypeSafeTranslate = <T = string>(
   }
 ) => T;
 
-const useTypeSafeTranslation = (): TypeSafeI18n => useTranslation();
+const useTranslation = (): I18n => useNextTranslateTranslation();
 
-export default useTypeSafeTranslation;
+export default useTranslation;

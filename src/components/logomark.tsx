@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 import Image, { ImageProps } from "@/components/image";
 
-import useTypeSafeTranslation from "@/hooks/useTypeSafeTranslation";
+import useTranslation from "@/hooks/useTranslation";
 
 import logomarkImage from "@/public/images/logomark.svg";
 
@@ -11,7 +11,7 @@ export type LogomarkProps = React.HTMLAttributes<HTMLElement> & {
 };
 
 const Logomark = ({ className = "", imageProps, ...props }: LogomarkProps) => {
-  const { t } = useTypeSafeTranslation();
+  const { t } = useTranslation();
 
   return (
     <figure className={clsx("relative", className)} {...props}>

@@ -3,12 +3,12 @@ import type { NextPage } from "next";
 import Logomark from "@/components/logomark";
 import Logotype from "@/components/logotype";
 
-import useTypeSafeTranslation from "@/hooks/useTypeSafeTranslation";
+import useTranslation from "@/hooks/useTranslation";
 
 import LayoutDefault from "@/layouts/default";
 
 const Home: NextPage = () => {
-  const { t } = useTypeSafeTranslation();
+  const { t } = useTranslation();
 
   return (
     <LayoutDefault

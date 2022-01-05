@@ -1,6 +1,6 @@
 import NextHead from "next/head";
 
-import useTypeSafeTranslation from "@/hooks/useTypeSafeTranslation";
+import useTranslation from "@/hooks/useTranslation";
 
 export type HeadProps = {
   children?: React.ReactNode;
@@ -9,7 +9,7 @@ export type HeadProps = {
 };
 
 const Head = ({ children, description, title }: HeadProps) => {
-  const { t } = useTypeSafeTranslation();
+  const { t } = useTranslation();
 
   return (
     <NextHead>
