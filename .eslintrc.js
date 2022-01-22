@@ -84,6 +84,7 @@ module.exports = {
     "prefer-numeric-literals": "error",
     "prefer-object-spread": "error",
     "prefer-template": "error",
+    "react/display-name": "off",
     "react/function-component-definition": [
       "error",
       {

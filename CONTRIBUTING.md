@@ -130,7 +130,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   - when naming JavaScript / TypeScript functions.
   - when naming JavaScript / TypeScript object keys.
   - when naming **local** JavaScript / TypeScript constants and variables.
-  - when naming React hooks and files that contain them.
+  - when naming React hooks.
 
 - Use `CONSTANT_CASE` / `MACRO_CASE` / `SCREAMING_SNAKE_CASE` / `UPPER_CASE`:
 
@@ -142,7 +142,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   - in `className` and `id` attributes.
   - in HTML, CSS and SCSS languages.
-  - when naming a folder or a file, unless the file contains a React hook or requires different naming convention.
+  - when naming a folder or a file, unless the file requires different naming convention.
   - when naming a new git branch.
   - when naming keys in translation namespace files.
 
@@ -287,7 +287,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   ```
 
   ```tsx
-  import useTypeSafeTranslation from "@/hooks/useTypeSafeTranslation";
+  import { useTypeSafeTranslation } from "@/modules/i18n";
 
   const Component = () => {
     const { t } = useTypeSafeTranslation();

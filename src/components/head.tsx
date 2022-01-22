@@ -1,6 +1,6 @@
 import NextHead from "next/head";
 
-import useTranslation from "@/hooks/useTranslation";
+import { useTranslation } from "@/modules/i18n";
 
 export type HeadProps = {
   children?: React.ReactNode;
