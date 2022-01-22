@@ -1,7 +1,7 @@
 import type { TranslationQuery } from "next-translate";
 import useNextTranslateTranslation from "next-translate/useTranslation";
 
-import type I18nKey from "@/types/i18n";
+import type I18nKey from "../types/i18n";
 
 export type I18n = {
   lang: string;

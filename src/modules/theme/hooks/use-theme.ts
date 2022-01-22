@@ -1,6 +1,6 @@
 import { useTheme as useNextThemesTheme } from "next-themes";
 
-import type Theme from "@/types/theme";
+import type Theme from "../types/theme";
 
 export type UseTheme = () => UseThemeProps;
 

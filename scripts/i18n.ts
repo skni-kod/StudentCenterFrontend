@@ -10,7 +10,7 @@ import * as log from "../src/utilities/log";
 let inputFiles: string[] = [];
 
 const inputPath = path.resolve(__dirname, "../src/locales/en/");
-const outputPath = path.resolve(__dirname, "../src/types/i18n.ts");
+const outputPath = path.resolve(__dirname, "../src/modules/i18n/types/i18n.ts");
 const outputDirectory = path.resolve(outputPath, "../");
 
 try {

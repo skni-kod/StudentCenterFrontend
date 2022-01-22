@@ -3,9 +3,9 @@ import type { NextPage } from "next";
 import Logomark from "@/components/logomark";
 import Logotype from "@/components/logotype";
 
-import useTranslation from "@/hooks/useTranslation";
-
 import LayoutDefault from "@/layouts/default";
+
+import { useTranslation } from "@/modules/i18n";
 
 const Home: NextPage = () => {
   const { t } = useTranslation();

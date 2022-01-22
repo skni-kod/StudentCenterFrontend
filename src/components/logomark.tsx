@@ -2,11 +2,12 @@ import clsx from "clsx";
 
 import Image, { ImageProps } from "@/components/image";
 
-import useTranslation from "@/hooks/useTranslation";
+import { useTranslation } from "@/modules/i18n";
 
 import logomarkImage from "@/public/images/logomark.svg";
 
 export type LogomarkProps = React.HTMLAttributes<HTMLElement> & {
+  children?: never;
   imageProps?: Omit<ImageProps, "alt" | "layout" | "objectFit" | "src">;
   plain?: boolean;
 };
