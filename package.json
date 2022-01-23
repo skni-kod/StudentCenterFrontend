@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "fix": "next lint --fix",
-    "i18n": "ts-node --project scripts/tsconfig.json scripts/i18n.ts",
+    "i18n": "ts-node --project scripts/tsconfig.json scripts/i18n/index.ts",
     "lint": "next lint",
     "postinstall": "npm run i18n",
     "start": "next start",
