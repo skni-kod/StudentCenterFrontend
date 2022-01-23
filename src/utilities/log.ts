@@ -52,11 +52,22 @@ export const foreground = (color: Color, text: string): string =>
 export const alert = (severity: Severity): string =>
   `${foreground(severityColors[severity], severity)} -`;
 
-export const error = (...message: string[]) =>
+/** Logs error to the console. */
+export const error = (...message: unknown[]) =>
   console.error(alert("error"), ...message);
 
-export const info = (...message: string[]) =>
+/** Logs information to the console. */
+export const info = (...message: unknown[]) =>
   console.log(alert("info"), ...message);
 
-export const warn = (...message: string[]) =>
+/** Logs warning to the console. */
+export const warn = (...message: unknown[]) =>
   console.warn(alert("warn"), ...message);
+
+const log = {
+  error,
+  info,
+  warn,
+};
+
+export default log;
