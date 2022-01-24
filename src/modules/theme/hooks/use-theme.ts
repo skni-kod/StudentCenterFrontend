@@ -3,6 +3,7 @@ import { useTheme as useNextThemesTheme } from "next-themes";
 import type UseTheme from "../types/use-theme";
 import type UseThemeProps from "../types/use-theme-props";
 
+/** Provides theme information. */
 const useTheme: UseTheme = () => {
   const useThemeProps = useNextThemesTheme() as Omit<
     UseThemeProps,

@@ -32,11 +32,16 @@ const deepKeysRecursive = (
   return stack;
 };
 
+/**
+ * Recursively traverses object and returns its keys.
+ *
+ * @param obj Object to extract keys from.
+ * @param intermediate If `true` keys with object values will also be included.
+ * @returns Array of object's keys.
+ */
 const deepKeys = (
   obj: Record<string, unknown>,
   intermediate?: boolean
-): string[] => {
-  return deepKeysRecursive(obj, [], null, Boolean(intermediate));
-};
+): string[] => deepKeysRecursive(obj, [], null, Boolean(intermediate));
 
 export default deepKeys;
