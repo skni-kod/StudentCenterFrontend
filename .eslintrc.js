@@ -61,7 +61,6 @@ module.exports = {
     "jsx-a11y/no-static-element-interactions": "error",
     "jsx-a11y/tabindex-no-positive": "error",
     "multiline-comment-style": "warn",
-    "no-confusing-arrow": "error",
     "no-else-return": "error",
     "no-extra-label": "error",
     "no-floating-decimal": "warn",
