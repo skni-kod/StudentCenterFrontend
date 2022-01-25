@@ -3,9 +3,10 @@ import path from "path";
 
 import prettier, { Options } from "prettier";
 
+import getDeepKeys from "@/utilities/deep-keys";
+import log from "@/utilities/log";
+
 import prettierConfig from "../../.prettierrc.js";
-import getDeepKeys from "../../src/utilities/deep-keys";
-import log from "../../src/utilities/log";
 
 export class GenerateI18nKeyError extends Error {
   readonly code: number;

@@ -12,18 +12,9 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/constants/*": ["src/constants/*"],
-      "@/hooks/*": ["src/hooks/*"],
-      "@/layouts/*": ["src/layouts/*"],
-      "@/locales/*": ["src/locales/*"],
-      "@/modules/*": ["src/modules/*"],
-      "@/pages/*": ["src/pages/*"],
-      "@/public/*": ["public/*"],
-      "@/scripts/*": ["scripts/*"],
-      "@/styles/*": ["src/styles/*"],
-      "@/types/*": ["src/types/*"],
-      "@/utilities/*": ["src/utilities/*"]
+      "@/*": ["./src/*"],
+      "@/public/*": ["./public/*"],
+      "@/scripts/*": ["./scripts/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
