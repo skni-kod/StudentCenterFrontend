@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "fix": "next lint --fix",
-    "i18n": "ts-node -r tsconfig-paths/register --project ./scripts/tsconfig.json ./scripts/i18n/index.ts",
+    "i18n": "npx @matali/next-translate-ts -o src/modules/i18n",
     "lint": "next lint",
     "postinstall": "npm run i18n",
     "start": "next start",
@@ -24,6 +24,7 @@
     "sass": "^1.44.0"
   },
   "devDependencies": {
+    "@matali/next-translate-ts": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/node": "16.11.6",

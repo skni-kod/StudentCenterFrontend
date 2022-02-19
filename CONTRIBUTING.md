@@ -287,10 +287,10 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   ```
 
   ```tsx
-  import { useTypeSafeTranslation } from "@/modules/i18n";
+  import { useTranslation } from "@/modules/i18n";
 
   const Component = () => {
-    const { t } = useTypeSafeTranslation();
+    const { t } = useTranslation();
 
     return <div>{t("common:hello-world")}</div>;
   };
