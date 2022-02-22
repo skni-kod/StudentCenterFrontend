@@ -1,6 +1,8 @@
-import type Theme from "./theme";
+export type Theme = "dark" | "light" | "system";
 
-interface UseThemeProps {
+export type UseTheme = () => UseThemeProps;
+
+export interface UseThemeProps {
   /** Forced theme name for the current page. */
   forcedTheme?: Theme;
   /** If `enableSystem` is true and the active theme is "system", this returns whether the system preference resolved to "dark" or "light". Otherwise, identical to `theme`. */
@@ -16,5 +18,3 @@ interface UseThemeProps {
   /** Toggle the theme. */
   toggleTheme: () => Theme;
 }
-
-export default UseThemeProps;

@@ -6,7 +6,7 @@ export type LinkProps = NextLinkProps &
     className?: string;
   };
 
-const Link = ({
+export const Link = ({
   as,
   children,
   className,
@@ -51,5 +51,3 @@ const Link = ({
     </a>
   );
 };
-
-export default Link;

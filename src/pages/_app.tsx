@@ -1,4 +1,5 @@
-import type { AppProps } from "next/app";
+import type { NextComponentType } from "next";
+import type { AppContext, AppInitialProps, AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { ThemeProvider } from "next-themes";
 
@@ -12,7 +13,10 @@ const handleExitComplete = () => {
   }
 };
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App: NextComponentType<AppContext, AppInitialProps, AppProps> = ({
+  Component,
+  pageProps,
+}) => {
   const router = useRouter();
 
   return (

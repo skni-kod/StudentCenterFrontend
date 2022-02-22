@@ -114,4 +114,6 @@ Please see our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-Studentre is not currently open source.
+Copyright &copy; Student Research Group of Computer Science - "Code". All rights reserved.
+
+Studentre is currently unlicensed.

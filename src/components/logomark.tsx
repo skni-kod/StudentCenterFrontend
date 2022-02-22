@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import Image, { ImageProps } from "@/components/image";
+import { Image, ImageProps } from "@/components/image";
 
 import { useTranslation } from "@/modules/i18n";
 
@@ -12,7 +12,7 @@ export type LogomarkProps = React.HTMLAttributes<HTMLElement> & {
   plain?: boolean;
 };
 
-const Logomark = ({
+export const Logomark = ({
   className = "",
   imageProps,
   plain = false,
@@ -43,5 +43,3 @@ const Logomark = ({
     </figure>
   );
 };
-
-export default Logomark;

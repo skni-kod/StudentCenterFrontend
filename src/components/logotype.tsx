@@ -6,7 +6,7 @@ export type LogotypeProps = React.HTMLAttributes<HTMLSpanElement> & {
   children?: never;
 };
 
-const Logotype = ({ className = "", ...props }: LogotypeProps) => {
+export const Logotype = ({ className = "", ...props }: LogotypeProps) => {
   const { t } = useTranslation();
 
   return (
@@ -21,5 +21,3 @@ const Logotype = ({ className = "", ...props }: LogotypeProps) => {
     </span>
   );
 };
-
-export default Logotype;

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
  *
  * @returns `true` if component has mounted, `false` otherwise.
  */
-const useMounted = () => {
+export const useMounted = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -14,5 +14,3 @@ const useMounted = () => {
 
   return mounted;
 };
-
-export default useMounted;

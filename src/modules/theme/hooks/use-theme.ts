@@ -1,10 +1,9 @@
 import { useTheme as useNextThemesTheme } from "next-themes";
 
-import type UseTheme from "../types/use-theme";
-import type UseThemeProps from "../types/use-theme-props";
+import { UseTheme, UseThemeProps } from "../types";
 
 /** Provides theme information. */
-const useTheme: UseTheme = () => {
+export const useTheme: UseTheme = () => {
   const useThemeProps = useNextThemesTheme() as Omit<
     UseThemeProps,
     "toggleTheme"
@@ -29,5 +28,3 @@ const useTheme: UseTheme = () => {
     toggleTheme,
   };
 };
-
-export default useTheme;
