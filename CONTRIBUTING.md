@@ -253,15 +253,39 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   ❌ **INCORRECT**
 
   ```ts
-  import Button from "../../components/button";
+  import { Button } from "../../components/button";
   import type { CardType } from "./types";
   ```
 
   ✔️ **CORRECT**
 
   ```ts
-  import Button from "@/components/button";
+  import { Button } from "@/components/button";
   import type { CardType } from "./types";
+  ```
+
+- Prefer named `export` unless default `export` is required.
+
+  ❌ **INCORRECT**
+
+  ```tsx
+  const Component = (props: ComponentProps) => <div></div>;
+
+  export default Component;
+  ```
+
+  ✔️ **CORRECT**
+
+  ```tsx
+  export const Component = (props: ComponentProps) => <div></div>;
+  ```
+
+  ✔️ **CORRECT**
+
+  ```tsx
+  import { Homepage } from "@/modules/home";
+
+  export default Homepage;
   ```
 
 #### Translations
@@ -271,11 +295,9 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   ❌ **INCORRECT**
 
   ```tsx
-  const Component = () => {
+  export const Component = () => {
     return <div>Hello world!</div>;
   };
-
-  export default Component;
   ```
 
   ✔️ **CORRECT**
@@ -289,13 +311,11 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   ```tsx
   import { useTranslation } from "@/modules/i18n";
 
-  const Component = () => {
+  export const Component = () => {
     const { t } = useTranslation();
 
     return <div>{t("common:hello-world")}</div>;
   };
-
-  export default Component;
   ```
 
 #### Types

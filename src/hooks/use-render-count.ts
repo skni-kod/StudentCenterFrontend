@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
  * @param title If present, will display the render count in the console with the given title.
  * @returns Render count of a component.
  */
-const useRenderCount = (title?: string) => {
+export const useRenderCount = (title?: string) => {
   const renderCount = useRef(0);
 
   useEffect(() => {
@@ -19,5 +19,3 @@ const useRenderCount = (title?: string) => {
 
   return renderCount.current;
 };
-
-export default useRenderCount;

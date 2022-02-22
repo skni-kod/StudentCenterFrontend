@@ -8,7 +8,7 @@ export type HeadProps = {
   title?: string;
 };
 
-const Head = ({ children, description, title }: HeadProps) => {
+export const Head = ({ children, description, title }: HeadProps) => {
   const { t } = useTranslation();
 
   return (
@@ -60,5 +60,3 @@ const Head = ({ children, description, title }: HeadProps) => {
     </NextHead>
   );
 };
-
-export default Head;
