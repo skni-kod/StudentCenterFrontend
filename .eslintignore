@@ -36,5 +36,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# configuration files
+i18n.js
+next.config.js
+postcss.config.js
+tailwind.config.js
+
 # generated files
 /src/modules/i18n
