@@ -6,8 +6,9 @@ module.exports = {
     "next/core-web-vitals",
     "prettier",
   ],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: ["tsconfig.json"],
+    project: ["./tsconfig.json"],
   },
   plugins: [
     "@typescript-eslint",
@@ -18,6 +19,7 @@ module.exports = {
     "typescript-sort-keys",
     "unused-imports",
   ],
+  root: true,
   rules: {
     "@typescript-eslint/array-type": "error",
     "@typescript-eslint/consistent-indexed-object-style": "error",
@@ -83,6 +85,7 @@ module.exports = {
     "prefer-numeric-literals": "error",
     "prefer-object-spread": "error",
     "prefer-template": "error",
+    "quote-props": ["error", "as-needed"],
     "react/display-name": "off",
     "react/function-component-definition": [
       "error",
@@ -106,7 +109,7 @@ module.exports = {
         shorthandLast: false,
       },
     ],
-    "quote-props": ["error", "as-needed"],
+    "simple-import-sort/exports": "warn",
     "simple-import-sort/imports": [
       "warn",
       {
@@ -136,7 +139,6 @@ module.exports = {
         ],
       },
     ],
-    "simple-import-sort/exports": "warn",
     "sort-destructure-keys/sort-destructure-keys": "warn",
     "sort-keys-fix/sort-keys-fix": [
       "warn",
