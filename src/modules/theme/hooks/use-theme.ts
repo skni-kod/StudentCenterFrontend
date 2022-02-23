@@ -1,6 +1,6 @@
 import { useTheme as useNextThemesTheme } from "next-themes";
 
-import { UseTheme, UseThemeProps } from "../types";
+import type { UseTheme, UseThemeProps } from "../types";
 
 /** Provides theme information. */
 export const useTheme: UseTheme = () => {

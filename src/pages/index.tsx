@@ -4,7 +4,7 @@ import { Logotype } from "@/components/logotype";
 
 import { useTranslation } from "@/modules/i18n";
 
-import { Page } from "@/types";
+import type { Page } from "@/types";
 
 const Home: Page = () => {
   const { t } = useTranslation();
