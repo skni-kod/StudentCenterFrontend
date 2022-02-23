@@ -1,5 +1,7 @@
 import NextImage, { ImageProps as NextImageProps } from "next/image";
 
+import type { Component } from "@/types";
+
 export type ImageProps = NextImageProps;
 
-export const Image = (props: ImageProps) => <NextImage {...props} />;
+export const Image: Component<ImageProps> = (props) => <NextImage {...props} />;

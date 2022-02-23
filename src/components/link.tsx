@@ -1,12 +1,16 @@
+import type { AnchorHTMLAttributes, ReactNode } from "react";
+
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 
+import type { Component } from "@/types";
+
 export type LinkProps = NextLinkProps &
-  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof NextLinkProps> & {
-    children: React.ReactNode;
+  Omit<AnchorHTMLAttributes<HTMLAnchorElement>, keyof NextLinkProps> & {
+    children: ReactNode;
     className?: string;
   };
 
-export const Link = ({
+export const Link: Component<LinkProps> = ({
   as,
   children,
   className,
@@ -18,7 +22,7 @@ export const Link = ({
   scroll,
   shallow,
   ...props
-}: LinkProps) => {
+}) => {
   if (
     (typeof href === "string" && href.startsWith("/")) ||
     typeof href === "object"

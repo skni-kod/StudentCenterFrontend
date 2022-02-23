@@ -153,45 +153,6 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 #### Components
 
-- Explicitly type `children` prop, unless it is a page component.
-
-  ❌ **INCORRECT**
-
-  ```tsx
-  type ExampleProps = {
-    message: string;
-  };
-
-  const Example = ({ message }: ExampleProps) => {
-    return <h1>{message}</h1>;
-  };
-  ```
-
-  ✔️ **CORRECT**
-
-  ```tsx
-  type ExampleProps = {
-    children?: never;
-    message: string;
-  };
-
-  const Example = ({ message }: ExampleProps) => {
-    return <h1>{message}</h1>;
-  };
-  ```
-
-  ✔️ **CORRECT**
-
-  ```tsx
-  type ExampleProps = {
-    children: React.ReactNode;
-  };
-
-  const Example = ({ children }: ExampleProps) => {
-    return <h1>{children}</h1>;
-  };
-  ```
-
 - Use functional components with arrow function syntax.
 
   ❌ **INCORRECT**
@@ -215,34 +176,64 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
   ✔️ **CORRECT**
 
   ```tsx
-  const Example = ({ message }: ExampleProps) => {
+  const Example: Component<ExampleProps> = ({ message }) => {
     return <h1>{message}</h1>;
   };
   ```
 
-- Use `NextPage` to type props for components in `/src/pages` directory.
+- Use custom `Component` and `Page` types to type props for components and pages respectively.
 
   ❌ **INCORRECT**
 
   ```tsx
-  type PageProps = {
-    message: string;
+  export type MenuItemProps = {
+    href: string;
+    title: string;
   };
 
-  const Page = ({ message }: PageProps) => {
-    return <div>{message}</div>;
+  export const MenuItem = ({ href, title }: MenuItemProps) => {
+    return <Link href={href}>{title}</Link>;
+  };
+  ```
+
+  ❌ **INCORRECT**
+
+  ```tsx
+  export type BlogPageProps = {
+    posts: Post[];
+  };
+
+  export const BlogPage = ({ posts }: BlogPageProps) => {
+    return posts.map((post) => <Post post={post} />);
   };
   ```
 
   ✔️ **CORRECT**
 
   ```tsx
-  type PageProps = {
-    message: string;
+  import type { Component } from "@/types";
+
+  export type MenuItemProps = {
+    href: string;
+    title: string;
   };
 
-  const Page: NextPage<PageProps> = ({ message }) => {
-    return <div>{message}</div>;
+  export const MenuItem: Component<MenuItemProps> = ({ href, title }) => {
+    return <Link href={href}>{title}</Link>;
+  };
+  ```
+
+  ✔️ **CORRECT**
+
+  ```tsx
+  import type { Page } from "@/types";
+
+  export type BlogPageProps = {
+    posts: Post[];
+  };
+
+  export const BlogPage: Page<BlogPageProps> = ({ posts }) => {
+    return posts.map((post) => <Post post={post} />);
   };
   ```
 
@@ -366,7 +357,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ```ts
   interface ExampleProps {
-    children: React.ReactNode;
+    children: ReactNode;
     title: string;
   }
   ```
@@ -375,7 +366,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ```ts
   type ExampleProps = {
-    children: React.ReactNode;
+    children: ReactNode;
     title: string;
   };
   ```

@@ -1,12 +1,17 @@
+import type { HTMLAttributes } from "react";
+
 import clsx from "clsx";
 
 import { useTranslation } from "@/modules/i18n";
 
-export type LogotypeProps = React.HTMLAttributes<HTMLSpanElement> & {
-  children?: never;
-};
+import type { Component } from "@/types";
 
-export const Logotype = ({ className = "", ...props }: LogotypeProps) => {
+export type LogotypeProps = Omit<HTMLAttributes<HTMLSpanElement>, "children">;
+
+export const Logotype: Component<LogotypeProps> = ({
+  className = "",
+  ...props
+}) => {
   const { t } = useTranslation();
 
   return (

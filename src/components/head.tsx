@@ -1,14 +1,22 @@
+import type { ReactNode } from "react";
+
 import NextHead from "next/head";
 
 import { useTranslation } from "@/modules/i18n";
 
+import type { Component } from "@/types";
+
 export type HeadProps = {
-  children?: React.ReactNode;
+  children?: ReactNode;
   description?: string;
   title?: string;
 };
 
-export const Head = ({ children, description, title }: HeadProps) => {
+export const Head: Component<HeadProps> = ({
+  children,
+  description,
+  title,
+}) => {
   const { t } = useTranslation();
 
   return (

@@ -1,3 +1,5 @@
+import type { HTMLAttributes } from "react";
+
 import clsx from "clsx";
 
 import { Image, ImageProps } from "@/components/image";
@@ -6,18 +8,19 @@ import { useTranslation } from "@/modules/i18n";
 
 import logomarkImage from "@/public/images/logomark.svg";
 
-export type LogomarkProps = React.HTMLAttributes<HTMLElement> & {
-  children?: never;
+import type { Component } from "@/types";
+
+export type LogomarkProps = Omit<HTMLAttributes<HTMLElement>, "children"> & {
   imageProps?: Omit<ImageProps, "alt" | "layout" | "objectFit" | "src">;
   plain?: boolean;
 };
 
-export const Logomark = ({
+export const Logomark: Component<LogomarkProps> = ({
   className = "",
   imageProps,
   plain = false,
   ...props
-}: LogomarkProps) => {
+}) => {
   const { t } = useTranslation();
 
   return plain ? (
