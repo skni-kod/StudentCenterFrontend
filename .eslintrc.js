@@ -121,9 +121,8 @@ module.exports = {
           ["^next"],
           ["^@?\\w"],
           ["^(@/components)(/.*|$)"],
-          ["^(@/constants)(/.*|$)"],
+          ["^(@/config)(/.*|$)"],
           ["^(@/hooks)(/.*|$)"],
-          ["^(@/layouts)(/.*|$)"],
           ["^(@/locales)(/.*|$)"],
           ["^(@/modules)(/.*|$)"],
           ["^(@/pages)(/.*|$)"],
@@ -143,13 +142,23 @@ module.exports = {
     "sort-keys-fix/sort-keys-fix": [
       "warn",
       "asc",
-      { caseSensitive: false, natural: true },
+      {
+        caseSensitive: false,
+        natural: true,
+      },
     ],
     "sort-vars": "warn",
     "spaced-comment": ["warn", "always"],
     "tailwindcss/classnames-order": "warn",
     "tailwindcss/no-contradicting-classname": "error",
-    "typescript-sort-keys/interface": "warn",
+    "typescript-sort-keys/interface": [
+      "warn",
+      "asc",
+      {
+        caseSensitive: false,
+        natural: true,
+      },
+    ],
     "typescript-sort-keys/string-enum": "warn",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
