@@ -121,7 +121,7 @@ module.exports = {
           ["^next"],
           ["^@?\\w"],
           ["^(@/components)(/.*|$)"],
-          ["^(@/config)(/.*|$)"],
+          ["^(@/configuration)(/.*|$)"],
           ["^(@/hooks)(/.*|$)"],
           ["^(@/locales)(/.*|$)"],
           ["^(@/modules)(/.*|$)"],
