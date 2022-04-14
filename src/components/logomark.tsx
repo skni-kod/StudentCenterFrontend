@@ -1,5 +1,7 @@
 import type { HTMLAttributes } from "react";
 
+import type { StaticImageData } from "next/image";
+
 import clsx from "clsx";
 
 import { Image, ImageProps } from "@/components/image";
