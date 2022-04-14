@@ -157,8 +157,12 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ❌ **INCORRECT**
 
-  ```tsx
-  class Example extends React.Component<ExampleProps> {
+  ```ts
+  export type ExampleProps = {
+    message: string;
+  };
+
+  export class Example extends React.Component<ExampleProps> {
     render() {
       return <h1>{this.props.message}</h1>;
     }
@@ -167,16 +171,26 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ❌ **INCORRECT**
 
-  ```tsx
-  function Example({ message }: ExampleProps) {
+  ```ts
+  export type ExampleProps = {
+    message: string;
+  };
+
+  export function Example({ message }: ExampleProps) {
     return <h1>{message}</h1>;
   }
   ```
 
   ✔️ **CORRECT**
 
-  ```tsx
-  const Example: Component<ExampleProps> = ({ message }) => {
+  ```ts
+  import type { Component } from "@/types";
+
+  export type ExampleProps = {
+    message: string;
+  };
+
+  export const Example: Component<ExampleProps> = ({ message }) => {
     return <h1>{message}</h1>;
   };
   ```
@@ -185,7 +199,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ❌ **INCORRECT**
 
-  ```tsx
+  ```ts
   export type MenuItemProps = {
     href: string;
     title: string;
@@ -198,7 +212,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ❌ **INCORRECT**
 
-  ```tsx
+  ```ts
   export type BlogPageProps = {
     posts: Post[];
   };
@@ -210,7 +224,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ✔️ **CORRECT**
 
-  ```tsx
+  ```ts
   import type { Component } from "@/types";
 
   export type MenuItemProps = {
@@ -225,7 +239,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ✔️ **CORRECT**
 
-  ```tsx
+  ```ts
   import type { Page } from "@/types";
 
   export type BlogPageProps = {
@@ -259,7 +273,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ❌ **INCORRECT**
 
-  ```tsx
+  ```ts
   const Component = (props: ComponentProps) => <div></div>;
 
   export default Component;
@@ -267,13 +281,13 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ✔️ **CORRECT**
 
-  ```tsx
+  ```ts
   export const Component = (props: ComponentProps) => <div></div>;
   ```
 
   ✔️ **CORRECT**
 
-  ```tsx
+  ```ts
   import { Homepage } from "@/modules/home";
 
   export default Homepage;
@@ -285,7 +299,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ❌ **INCORRECT**
 
-  ```tsx
+  ```ts
   export const Component = () => {
     return <div>Hello world!</div>;
   };
@@ -293,19 +307,25 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
   ✔️ **CORRECT**
 
-  ```json
-  {
-    "hello-world": "Hello world!"
-  }
+  ```ts
+  const en: BaseTranslation = {
+    helloWorld: "Hello world!",
+  };
   ```
 
-  ```tsx
-  import { useTranslation } from "@/modules/i18n";
+  ```ts
+  const pl: Translation = {
+    helloWorld: "Witaj świecie!",
+  };
+  ```
 
-  export const Component = () => {
-    const { t } = useTranslation();
+  ```ts
+  import { useI18nContext } from "@/modules/i18n";
 
-    return <div>{t("common:hello-world")}</div>;
+  export const Component: Component = () => {
+    const { LL } = useI18nContext();
+
+    return <div>{LL.helloWorld()}</div>;
   };
   ```
 

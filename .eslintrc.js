@@ -123,7 +123,6 @@ module.exports = {
           ["^(@/components)(/.*|$)"],
           ["^(@/configuration)(/.*|$)"],
           ["^(@/hooks)(/.*|$)"],
-          ["^(@/locales)(/.*|$)"],
           ["^(@/modules)(/.*|$)"],
           ["^(@/pages)(/.*|$)"],
           ["^(@/public)(/.*|$)"],

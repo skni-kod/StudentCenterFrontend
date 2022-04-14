@@ -1,17 +1,25 @@
+import type { GetStaticProps } from "next";
+
 import { Head } from "@/components/head";
 import { Logomark } from "@/components/logomark";
 import { Logotype } from "@/components/logotype";
 
-import { useTranslation } from "@/modules/i18n";
+import { getI18nProps, Locales, useI18nContext } from "@/modules/i18n";
 
 import type { Page } from "@/types";
 
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await getI18nProps(locale as Locales, ["home"])),
+  },
+});
+
 const Home: Page = () => {
-  const { t } = useTranslation();
+  const { LL } = useI18nContext();
 
   return (
     <main className="flex justify-center items-center w-full h-screen text-5xl">
-      <Head title={`${t("home:homepage")} | ${t("common:app-name")}`} />
+      <Head title={`${LL.home.homepage()} | ${LL.app.name()}`} />
       <Logomark className="w-32 h-32" />
       <Logotype />
     </main>

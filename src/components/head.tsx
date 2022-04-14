@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 import NextHead from "next/head";
 
-import { useTranslation } from "@/modules/i18n";
+import { useI18nContext } from "@/modules/i18n";
 
 import type { Component } from "@/types";
 
@@ -17,7 +17,7 @@ export const Head: Component<HeadProps> = ({
   description,
   title,
 }) => {
-  const { t } = useTranslation();
+  const { LL } = useI18nContext();
 
   return (
     <NextHead>
@@ -59,11 +59,8 @@ export const Head: Component<HeadProps> = ({
         type="font/woff2"
       />
       {/* Meta tags */}
-      <meta
-        content={description ?? t("common:app-description")}
-        name="description"
-      />
-      <title>{title ?? t("common:app-name")}</title>
+      <meta content={description ?? LL.app.description()} name="description" />
+      <title>{title ?? LL.app.name()}</title>
       {children}
     </NextHead>
   );

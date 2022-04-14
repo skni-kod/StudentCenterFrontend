@@ -5,8 +5,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "dev:i18n": "concurrently \"npm run dev\" \"npm run i18n\"",
     "fix": "next lint --fix",
-    "i18n": "npx @matali/next-translate-ts -o src/modules/i18n",
+    "i18n": "typesafe-i18n --no-watch",
     "lint": "next lint",
     "postinstall": "npm run i18n",
     "start": "next start",
@@ -17,14 +18,13 @@
     "framer-motion": "^5.5.5",
     "next": "^12.0.7",
     "next-themes": "^0.1.1",
-    "next-translate": "^1.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
-    "sass": "^1.44.0"
+    "sass": "^1.44.0",
+    "typesafe-i18n": "^5.3.6"
   },
   "devDependencies": {
-    "@matali/next-translate-ts": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/node": "16.11.6",
@@ -33,6 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.12.1",
     "autoprefixer": "^10.4.0",
+    "concurrently": "^7.1.0",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.2",
     "eslint-config-prettier": "^8.3.0",
