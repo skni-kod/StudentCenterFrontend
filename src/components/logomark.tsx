@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 import { Image, ImageProps } from "@/components/image";
 
-import { useTranslation } from "@/modules/i18n";
+import { useI18nContext } from "@/modules/i18n";
 
 import logomarkImage from "@/public/images/logomark.svg";
 
@@ -21,7 +21,7 @@ export const Logomark: Component<LogomarkProps> = ({
   plain = false,
   ...props
 }) => {
-  const { t } = useTranslation();
+  const { LL } = useI18nContext();
 
   return plain ? (
     <svg
@@ -37,7 +37,7 @@ export const Logomark: Component<LogomarkProps> = ({
   ) : (
     <figure className={clsx("relative", className)} {...props}>
       <Image
-        alt={`${t("common:app-name")} - ${t("common:logo")}`}
+        alt={`${LL.app.name()} - ${LL.app.description()}`}
         layout="fill"
         objectFit="contain"
         src={logomarkImage as StaticImageData}

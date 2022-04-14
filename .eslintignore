@@ -41,6 +41,3 @@ i18n.js
 next.config.js
 postcss.config.js
 tailwind.config.js
-
-# generated files
-/src/modules/i18n

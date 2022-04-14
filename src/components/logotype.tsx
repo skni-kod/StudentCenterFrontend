@@ -2,7 +2,7 @@ import type { HTMLAttributes } from "react";
 
 import clsx from "clsx";
 
-import { useTranslation } from "@/modules/i18n";
+import { useI18nContext } from "@/modules/i18n";
 
 import type { Component } from "@/types";
 
@@ -12,7 +12,7 @@ export const Logotype: Component<LogotypeProps> = ({
   className = "",
   ...props
 }) => {
-  const { t } = useTranslation();
+  const { LL } = useI18nContext();
 
   return (
     <span
@@ -22,7 +22,7 @@ export const Logotype: Component<LogotypeProps> = ({
       )}
       {...props}
     >
-      {t("common:app-name")}
+      {LL.app.name()}
     </span>
   );
 };
