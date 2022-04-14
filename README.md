@@ -17,7 +17,7 @@
 - **Deployment**: [Vercel](https://vercel.com/)
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
-- **I18n**: [next-translate](https://github.com/vinissimus/next-translate)
+- **I18n**: [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
