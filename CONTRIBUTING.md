@@ -425,6 +425,7 @@ All of the code is linted with [ESLint](https://eslint.org/) and formatted with 
 
 - Start branch names, commit messages and pull request titles with applicable type.
 
+  - `build` - when making changes affecting build system or external dependencies
   - `chore` - when changing code that doesn't affect production
   - `docs` - when writing documentation
   - `feat` - when adding a new feature
