@@ -38,6 +38,5 @@ yarn-error.log*
 
 # generated files
 /src/modules/i18n/formatters.ts
-/src/modules/i18n/generated-types.ts
 /src/modules/i18n/react.tsx
 /src/modules/i18n/utilities*
